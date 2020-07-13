@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <h2>Program to display the current day and Time in Following formate</h2>
+        
+    </head>
+    <body>
+        <script>
+            var date=new Date();
+            var day=date.getDay();
+            var weekdays=['Sunday','Monday','Tuesday','Wednesday','Thusday','Friday','Saturday'];
+            
+            document.write("Today is:"+weekdays[day]);
+            
+            var hours=date.getHours();
+            var min=date.getMinutes();
+            var sec=date.getSeconds();
+            var ampm;
+            ampm=hours >=12 ? 'PM' :'AM';
+            
+            document.write("<br>"+"Today is:"+hours+ampm+":"+min+":"+sec);
+        </script>
+    </body>
+</html>
