@@ -1,0 +1,69 @@
+<!-- Explain with example the Remaining Methods of String & Array -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+/************************ Methods Of String ******************************/    
+    
+      let txt = "Hello Sir Thanks for teaching Javascript awesome";
+//Search() :-Searches a string for a specified value.returns the position of the match        
+      let s1 = txt.search("sir");
+      console.log(s1);
+
+/*Extracting String part -- slice(start, end)
+                            substring(start, end)
+                            substr(start, length)*/      
+         let s2=txt.slice(3,8); 
+         let s3=txt.substr(7);
+         let s4=txt.substring(1,15);
+         console.log(s2);
+         console.log(s3);
+         console.log(s4); 
+         
+ //replace() :-returns a new string where the specified values are replaced
+         let s5=txt.replace("J","k");
+         console.log(txt);  
+  //concat() :-Joins two or more strings, and returns a new joined strings
+          let txt1="Great Platform";
+          let s6=txt.concat(" ",txt1);  
+          console.log(s6);
+
+       
+/******************************* Methods of Arrays *****************************/
+       let lang=["Java","Angular","JavaScript","Python","AIML"];
+
+    //pop() :- returns the value that was popped out
+        lang.pop("AIML");
+        console.log(lang);
+
+    //push() :- method adds a new element to an array at the end
+         lang.push("ASP.Net");
+         console.log(lang);
+
+    //changing element
+          lang[2]="C++";
+          console.log(lang);
+
+    //slice() :- slices out a piece of an array
+          let ss=lang.slice(2);
+          console.log(ss);
+
+    //sort() :- sort array alphabetically if String 
+           lang.sort();
+           console.log(lang);
+
+     // includes() :-Checks whether a string contains the specified string/characters
+           let str = "Hello world, welcome to the universe.";
+           let n = str.includes("world");
+           console.log(n);
+           
+
+    </script>
+</body>
+</html>
