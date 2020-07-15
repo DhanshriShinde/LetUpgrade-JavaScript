@@ -1,0 +1,67 @@
+<!-- Write difference between var, let and const with code-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Differnce between var,let and const</h3>
+    <!-- 
+       var :-
+            - function scope
+            - undefined when accessing a variable before it's declared
+       let :-
+            - Block scope
+            - ReferenceError when accessing a variable before it's declaredReferenceError when accessing a variable before it's declared
+       const :-
+            - Block scope
+            - ReferenceError when accessing a variable before it's declared 
+            - can't be reassigned
+    -->
+    <h3>Example of Var<h3>
+        <script>  
+            function vardemo()
+            {
+              console.log("Var Output")
+               var a =50;
+               console.log(a);  // output 50
+               if(true){
+                  var a=100;
+                  console.log(a); // output 100
+              }
+               console.log(a);  // output 100
+            }
+          </script>
+     
+     <h3>Example of Let</h3>
+        <script>
+           function letdemo()
+           {
+           console.log("Let Output")
+           let a =10;
+            console.log(a);  // output 10
+           if(true)
+           {
+           let a=20;
+           console.log(a); // output 20
+           }
+          console.log(a);  // output 10
+          }
+    </script>
+
+
+     <h3>Example of const</h3>
+     <script>
+        function constdemo()
+        {
+            console.log("Const tput")
+            const MY_VARIABLE =10;
+            console.log(MY_VARIABLE);  //output 10
+       }
+       <button onclick="constdemo()">Click Here For const Output</button>
+    </script>
+</body>
+</html>
