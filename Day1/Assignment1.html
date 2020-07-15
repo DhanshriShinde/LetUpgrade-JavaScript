@@ -1,0 +1,84 @@
+<!--Explore and explain the various methods in console function
+     Explain them
+     Ex. console.log()
+     console.warn().
+     etc...
+     --->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+     <script>
+//Methods:-
+// 1) console.log():-
+   /* this method used to log(print) the output to the console. 
+        We can put any type of data inside the log(), 
+        be it a string, array, object, boolean etc.*/
+        console.log("LetsUpgrade Javascript Batch1");
+        console.log(true);
+        console.log([1,2,3,4,5,6,7,8,9]);//array
+        console.log(true);
+
+// 2) console.error():-
+    /* This method useful in testing of code .
+    By default error message will be highlighted with red color.*/
+       console.error("This is error Message print using console.log");   
+       
+// 3) console.clear() :-
+        /*Used for clear the console. The console will be cleared, in case of Chrome a simple overlayed text 
+        will be printed like : ‘Console was cleared’ while in firefox no message is returned.*/ 
+         console.clear();
+
+// 4) console.warn() :-
+        /*Used to log warning message to the console. 
+        By default the warning message will be highlighted with yellow color.*/ 
+        console.warn('This is a warning.');
+
+// 5) console.table() :-
+        /*This method allows us to generate a table inside a console. 
+        The input must be an array or an object which will be shown as a table.*/
+        console.table({ 'a': 1, 'b': 2 }); 
+        
+// 6) console.count() :-
+        /*This method is used to count the number that the function hit by this counting method.*/ 
+        for (let i = 0; i < 5; i++)
+         {
+            console.count(i);
+         }   
+         
+// 7) console.time() and console.timeEnd() :-
+        /*Whenever we want to know the amount of time spend by a block or a function,
+         we can make use of the time() and timeEnd() methods*/ 
+
+        /*They take a label which must be same, and the code inside can be anything( function, object, simple console).*/
+         console.time('abc');
+        let fun = function ()
+        {
+            console.log('fun is running');
+        }
+        let fun2 = function () 
+        {
+            console.log('fun2 is running..');
+        }
+        fun(); // calling fun(); 
+        fun2(); // calling fun2(); 
+        console.timeEnd('abc');  
+        
+// 8)  console.group() and console.groupEnd() :-
+        /* group() and groupEnd() methods of the console object allows us to group contents in a separate block, 
+        which will be indented. Just like the time() and the timeEnd() they also accepts label, again of same value.*/
+        console.group('simple');
+        console.warn('warning!');
+        console.error('error here');
+        console.log('Hello everyone');
+        console.groupEnd('simple');
+        console.log('new section');        
+     </Script>    
+</body>
+</html>
