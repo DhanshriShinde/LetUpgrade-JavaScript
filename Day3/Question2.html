@@ -1,0 +1,30 @@
+<!-- Write a program which will take OS version and name from the user separated by space 
+then log the OS name and version on console -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function print()
+        {
+            let name=document.getElementById('txt').value;
+            let str=name.split(" ");
+            let OSname=str[0];
+            let version=str[1];
+            console.log("Name of OS :"+OSname);
+            console.log("Version of OS:"+version);
+        }
+
+   </script>
+
+</head>
+<body>
+    <label>Enter the OS Name</label>
+    <input type="text" id="txt">
+    <button id="b1" onclick="print()">Find</button>
+</body>
+</html>
