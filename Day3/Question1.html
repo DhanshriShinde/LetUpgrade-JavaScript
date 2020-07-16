@@ -1,0 +1,32 @@
+<!--take a number from user and write the function which checks whether the no. is even or odd.
+  Assign the result to variable and log that variable into console -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>>, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+         function find()
+         {
+             let n1=document.getElementById('num').value;
+             if(n1%2==0)
+             {
+                console.log("Number"+n1+"is Even");
+             }
+             else
+             {
+                console.log("Number"+n1+"is odd");
+             }
+            
+         }
+    </script>
+
+</head>
+<body>
+    <label>Enter the Number</label>
+    <input type="number" id="num">
+    <button id="b1" onclick="find()">Find</button>
+</body>
+</html>
