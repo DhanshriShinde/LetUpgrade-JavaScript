@@ -1,0 +1,33 @@
+  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day5Assignment</title>
+</head>
+<body>
+    <h4>Write a program which does the following things:<br>
+		1. Takes a positive number from the user. <br>
+		2. Makes an array of numbers till the number given by user <br>
+		3. Use higher order function to filter the odd numbers <br>
+		4. Generate and array of the cubes of the filtered numbers
+    </h4>
+    <script>
+          
+let arr = prompt("enter your numbers ").split(",")
+console.log(arr)
+no_arr=arr;	
+
+		let odd = no_arr.filter( n => n%2!==0);
+        console.log(`the odd number from the given list ${odd}`)
+		let cubes = no_arr.filter(n=>n%2!== 0).map(n=>n**3)
+
+        console.log(`Cubes of odd numbers in the range is:${cubes}`);
+
+console.log(odd);
+console.log(cubes);
+
+    </script>
+</body>
+</html>
