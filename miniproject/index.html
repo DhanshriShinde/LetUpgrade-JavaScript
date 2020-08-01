@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" ></script>
+     <link rel="css"  href="JS-ToDoListProject/style.css" type="text/css">
+   
+    <style>
+         .div
+        {
+          width: 700px;
+          height: 500px;
+          margin-top: 20px;
+          padding:60px ;
+        } 
+        .maindiv
+        {
+            background-color: oldlace;
+            width:700px ;
+            height:auto;
+            margin-left: 250px;
+            margin-top: 100px;
+        }
+        .btnpos
+        {
+            padding: 8px;
+            margin: 5px;
+            font-size: 14px;
+        }
+        input
+        {
+            font-size:20px;
+            height:"50px"
+        }
+    </style>
+    
+</head>
+<body background="Desktop.jpg" >
+<div class="maindiv">    
+    <div class=" div" >
+        <h1>Welcome to ToDo List Application</h1>
+         <div style="margin:10px ;">
+              <input type="text" id="task" placeholder="Enter the Task"   size="32px"/>
+              <button type="button" id="addtask" class="btn btn-success btnpos">
+                  Add Task</button>
+              <button type="button" id="delete-tasks" class="btn btn-danger btnpos" >
+                  Delete All</button>
+         </div>
+   
+       <div class="table-responsive">          
+          <table class="table table-striped mt-3 mt-0" id="AddTaskList" style="font-size:18px;">
+          </table>
+       </div>
+    </div>
+  </div>   
+  
+  <script src="main.js"></script>
+</body>
+</html>
